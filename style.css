@@ -1,0 +1,32 @@
+html, body {
+	padding: 0;
+	margin: 10px auto;
+	font-family: "Roboto", sans-serif;
+	background-color: #339933;
+	width: 100%;
+	height: 100%;
+}
+a:link {
+	color: white;
+}
+a:visited {
+	color: #c6c6c6;
+}
+
+.container {
+	position: relative;
+}
+
+#player_hand {
+	top: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #006600;
+	height: 20%;
+	width: 90%;
+	border-radius: 10px;
+}
+
+.card {
+
+}

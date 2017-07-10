@@ -8,10 +8,10 @@ const HEARTS = 'H';
 const CLUBS = 'C';
 const DIAMONDS = 'D';
 // temporary placeholder
-const FULL_DECK = _.flatten(_.range(1, 14).reduce(function(acc, x) {
-	acc.push([SPADES, HEARTS, CLUBS, DIAMONDS].map((y) => new Card(y, x)));
+const FULL_DECK = _.flatten([SPADES/*, HEARTS, CLUBS, DIAMONDS*/].map((y) => _.range(1, 14).reduce(function(acc, x) {
+	acc.push(new Card(y, x));
 	return acc;
-}, []));
+}, [])));
 
 console.log(FULL_DECK);
 
@@ -42,6 +42,7 @@ for(let player of hands) {
 console.log(deck);
 console.log(hands);
 
+/*
 var canvas = document.getElementById("board");
 
 canvas.width = document.body.clientWidth;
@@ -69,5 +70,4 @@ var drawAll = function() {
 	ctx.stroke();
 	// handle = window.requestAnimationFrame(drawAll);
 }
-
-var handle = window.requestAnimationFrame(drawAll);
+*/
